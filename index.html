@@ -350,7 +350,6 @@
 
                 <div class="equip-item"><input type="checkbox" id="condenser"><label for="condenser">מיקרופון קונדנסר</label></div>
                 <div class="equip-item"><input type="checkbox" id="boom"><label for="boom">מקל בום</label></div>
-                <div class="equip-item"><input type="checkbox" id="zepelin"><label for="zepelin">פיש (זפלין)</label></div>
                 <div class="equip-item"><input type="checkbox" id="deadcat"><label for="deadcat">כיסוי שפן/רוח</label></div>
                 <div class="equip-item">
                     <input type="checkbox" id="xlr_cable"><label for="xlr_cable">כבל XLR</label>
@@ -377,10 +376,11 @@
                 <!-- תאורת לד עם בחירה גדולה/ישנה -->
                 <div class="equip-item" style="grid-column: span 2;">
                     <input type="checkbox" id="led_light"><label for="led_light">מזוודת/תיק לד</label>
-                    <select style="width: auto; margin-right: 6px;" id="led_type">
-                        <option value="big_new">גדול (חדש)</option>
+                    <select style="width: auto; margin-right: 6px;" id="led_type" multiple>
+                        <option value="big_new">גדול (מזוודה)</option>
                         <option value="big_old">גדול ישן</option>
                         <option value="medium">בינוני</option>
+                        <option value="medium2">בינוני - 2</option>
                         <option value="small">קטן</option>
                     </select>
                 </div>
@@ -389,13 +389,8 @@
                     <input type="checkbox" id="light_batteries"><label for="light_batteries">בטריות לתאורה</label>
                     <input type="number" class="qty-input" placeholder="כמות" min="0" value="0">
                 </div>
-                <div class="equip-item"><input type="checkbox" id="tungsten"><label for="tungsten">תאורת חשמל (תפוז/טוויני)</label></div>
-
-                <!-- ג'לטינים מופרדים לפי דרישה -->
                 <div class="equip-item"><input type="checkbox" id="gel_orange"><label for="gel_orange">תיק ג'לטינים כתום + תנינים</label></div>
                 <div class="equip-item"><input type="checkbox" id="gel_color"><label for="gel_color">תיק ג'לטינים צבעוני + תנינים</label></div>
-                
-                <!-- תיקי תאורה בינוני/גדול עם אפשרות כמות -->
                 <div class="equip-item">
                     <input type="checkbox" id="bag_medium"><label for="bag_medium">תיק לד בינוני</label>
                     <input type="number" class="qty-input" placeholder="כמות" min="0" value="0" style="width:55px;">
@@ -416,7 +411,7 @@
                 <div class="equip-item"><input type="checkbox" id="softstand"><label for="softstand">סטנד ריכוך</label></div>
                 <div class="equip-item"><input type="checkbox" id="grip_stands"><label for="grip_stands">גריפ סטנדס</label></div>
                 <div class="equip-item"><input type="checkbox" id="shoulder"><label for="shoulder">תיק מכתוף</label></div>
-                <div class="equip-item"><input type="checkbox" id="gimbal"><label for="gimbal">גימבל מלא</label></div>
+                <div class="equip-item"><input type="checkbox" id="gimbal"><label for="gimbal">גימבל</label></div>
                 <div class="equip-item"><input type="checkbox" id="dolly"><label for="dolly">דולי + פסים/קושרת</label></div>
                 <div class="equip-item"><input type="checkbox" id="extension"><label for="extension">כבל מאריך/תוף</label></div>
                 <div class="equip-item"><input type="checkbox" id="clamp"><label for="clamp">קלפ צילום</label></div>
