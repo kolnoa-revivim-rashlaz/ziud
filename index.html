@@ -373,32 +373,29 @@
                 <div class="equip-item"><input type="checkbox" id="monitor_small"><label for="monitor_small">מוניטור קטן + זרוע</label></div>
                 <div class="equip-item"><input type="checkbox" id="monitor_big"><label for="monitor_big">מוניטור גדול בקייס</label></div>
                 
-                <!-- תאורת לד עם בחירה גדולה/ישנה -->
-                <div class="equip-item" style="grid-column: span 2;">
-                    <input type="checkbox" id="led_light"><label for="led_light">מזוודת/תיק לד</label>
-                    <select style="width: auto; margin-right: 6px;" id="led_type" multiple>
-                        <option value="big_new">גדול (מזוודה)</option>
-                        <option value="big_old">גדול ישן</option>
-                        <option value="medium">בינוני</option>
-                        <option value="medium2">בינוני - 2</option>
-                        <option value="small">קטן</option>
-                    </select>
+                <!-- פירוט תאורת לד עם כמויות -->
+                <div class="equip-item"><input type="checkbox" id="led_big_new"><label for="led_big_new">לד גדול (מזוודה)</label>
+                    <input type="number" class="qty-input" min="0" value="0">
+                </div>
+                <div class="equip-item"><input type="checkbox" id="led_big_old"><label for="led_big_old">לד גדול ישן</label>
+                    <input type="number" class="qty-input" min="0" value="0">
+                </div>
+                <div class="equip-item"><input type="checkbox" id="led_med_1"><label for="led_med_1">לד בינוני (תיק)</label>
+                    <input type="number" class="qty-input" min="0" value="0">
+                </div>
+                <div class="equip-item"><input type="checkbox" id="led_med_2"><label for="led_med_2">לד בינוני - 2</label>
+                    <input type="number" class="qty-input" min="0" value="0">
+                </div>
+                <div class="equip-item"><input type="checkbox" id="led_small_bag"><label for="led_small_bag">לד קטן</label>
+                    <input type="number" class="qty-input" min="0" value="0">
                 </div>
 
                 <div class="equip-item">
                     <input type="checkbox" id="light_batteries"><label for="light_batteries">בטריות לתאורה</label>
-                    <input type="number" class="qty-input" placeholder="כמות" min="0" value="0">
+                    <input type="number" class="qty-input" min="0" value="0">
                 </div>
-                <div class="equip-item"><input type="checkbox" id="gel_orange"><label for="gel_orange">תיק ג'לטינים כתום + תנינים</label></div>
-                <div class="equip-item"><input type="checkbox" id="gel_color"><label for="gel_color">תיק ג'לטינים צבעוני + תנינים</label></div>
-                <div class="equip-item">
-                    <input type="checkbox" id="bag_medium"><label for="bag_medium">תיק לד בינוני</label>
-                    <input type="number" class="qty-input" placeholder="כמות" min="0" value="0" style="width:55px;">
-                </div>
-                <div class="equip-item">
-                    <input type="checkbox" id="bag_large"><label for="bag_large">תיק לד גדול</label>
-                    <input type="number" class="qty-input" placeholder="כמות" min="0" value="0" style="width:55px;">
-                </div>
+                <div class="equip-item"><input type="checkbox" id="gel_orange"><label for="gel_orange">ג'לטינים כתום + תנינים</label></div>
+                <div class="equip-item"><input type="checkbox" id="gel_color"><label for="gel_color">ג'לטינים צבעוני + תנינים</label></div>
             </div>
         </div>
 
